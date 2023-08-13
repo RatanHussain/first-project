@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google home page</title>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .container{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        .head{
+            position: absolute;
+            top: 0;
+            right: 0;
+            & ul li{
+                display: inline-flex;
+                list-style: none;
+                margin: 5px 10px;
+                /* border: 1px solid black; */
+                padding: 3px 7px;
+                cursor: pointer;
+                & a{
+                    text-decoration: none;
+                    color: black;
+                    & button{
+                        line-height: 23px;
+                        padding: 3px 15px;
+                        border-radius: 3px;
+                        border: 1px solid black;
+                        outline: none;
+                        background: #4584ef;
+                        color: #fff;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                        color: blue;
+                    }
+                }
+
+            }
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 680px;
+            .googleicon{
+                margin-top: -20px;
+            }
+            .inputtype{
+                /* display: flex; */
+                margin-top: 60px;
+                position: relative;
+                width: 100%;
+                & input{
+                    width: 98%;
+                    border: 1px solid;
+                    padding: 10px;
+                    padding-left: 60px;
+                    /* padding-right: 60px; */
+                    border-radius: 30px;
+                    outline: none;
+                    margin-right: 20px;               
+                    justify-content: center;
+                    outline-offset: 50px;
+                }
+                .icons{
+                    width:100%;
+                    display: flex;
+                    top: 0;
+                    padding: 7px 30px;
+                    position: absolute;
+                    align-items: center;
+                    justify-content: space-between;
+                    pointer-events: none;
+                }
+
+            }
+            .textbutton{
+                margin: 40px 30px;
+                
+                & input{
+                    margin: 0px 20px;
+                    font-size: 16px;
+                    padding: 5px 10px ;
+                    border: none;
+                    background-color: #fff;
+                    &:hover{
+                        background-color: #e7e5e5;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+
+        }
+
+    }
+    .footer{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        height: fit-content;
+        background-color: #e7e5e5;
+        .side li{
+            display: inline-flex;
+            margin: 3px 5px;
+            & a{
+                text-decoration: none;
+                color: #000;
+                /* font-weight: bold; */
+                &:hover{
+                    text-decoration: underline;
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width:768px){
+    .inputtype .searchbox{
+        width: 40%;
+    }
+    .footer .side ul li{
+        display: block;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <ul>
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="bars.png" alt=""></a></li>
+                <li><a href="#"><button>Sing up</button></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="googleicon">
+                <img src="google.png" alt="Google icons">
+            </div>
+            <div class="inputtype">
+                <input type="text" name="" id="" class="searchbox">
+                <div class="icons">
+                    <div class="icon"><img src="search.png" alt=""></div>
+                    <div class="icon"><img src="mic.png" alt=""></div>
+                </div>
+            </div>
+            <div class="textbutton">
+                <input type="button" value="Search in google">
+                <input type="button" value="I'm feeling lucky">
+            </div>
+            <div class="offered">
+                <h4>Google offered in <a href="#">বাংলা</a></h4>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="side left">
+            <ul>
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How Search Works</a></li>
+            </ul>
+        </div>
+        <div class="side right">
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
