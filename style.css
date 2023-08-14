@@ -124,6 +124,8 @@ body{
     }
 }
 
+/* Just check pull */
+
 @media (max-width:768px){
     .inputtype .searchbox{
         width: 40%;
